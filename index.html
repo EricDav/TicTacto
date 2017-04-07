@@ -1,0 +1,84 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tic Ta</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>You Are Welcome To The Tic Tac To Game</h1>
+	</header>
+	<center style="margin-top: 0px;">
+		<h2 style="font-weight: 20px;">SCORE BOARD</h2>
+		
+			<span style="margin-right: 20px;">Wins</span><span style="margin-right: 20px;">Draws</span><span>Losts</span>
+			<div class = "score">
+				<div style="margin-right: 85px; width: 300px; height: 20px;"><b>Player: </b><div id="first" style="float: right; width: 70px;">0</div><div id="second" style="float: right; width: 70px;">0</div><div id="third" style="float: right; width: 70px; ">0</div></div> 
+				<div style="margin-right: 85px; width: 300px; height: 20px;"><b>Computer:</b> <div id ="fourth" style="float: right; width: 70px;">0</div><div id="fifth" style="float: right; width: 70px;">0</div><div id="sixth" style="float: right; width: 70px; ">0</div></div> 
+			</div>
+		
+		<div class= "butt">
+			<button onclick="buton();" style="float: left; width: 85px; height: 50px; "> Restart Game</button>
+		</div>
+	</center>
+	<center>
+		<div class = "big">
+			<div class = "small1">
+				<div onclick = "name('X', 0);" class="vsmall1">
+					<div id="man" class = man></div>
+				</div>
+			<div onclick = "name1('X', 0);" class="vsmall1">
+					<div id="man1" class="man"></div>
+				</div>
+				<div onclick = "name2('X', 0);" class="vsmall1">
+					<div id="man2" class = "man"></div>
+				</div>
+				
+			</div >
+			<div class = "small1">
+				<div onclick = "name3('X', 0);" class="vsmall2">
+					<div id="man3" class = "man"></div>
+				</div>
+				<div onclick = "name4('X', 0);" class="vsmall2">
+					<div id="man4" class = "man"></div>
+				</div>
+				<div  onclick = "name5('X', 0);" class="vsmall2">
+					<div id="man5" class = "man"></div>
+				</div>
+				
+			</div>
+			<div class = "small1">
+				<div onclick = "name6('X', 0);" class="vsmall3">
+					<div id="man6" class = "man"></div>
+				</div>
+				<div onclick = "name7('X', 0);" class="vsmall3">
+					<div id="man7" class = "man"></div>
+				</div>
+				<div onclick = "name8('X', 0);" class="vsmall3">
+					<div id="man8" class = "man"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class = "result">
+					<h1 id = "result"></h1>
+				</div>
+		<div class = "How">
+		<article>
+			<span>HOW TO PLAY:</span> <strong>Click</strong> on any of the <strong>grid</strong> or <strong>boxes</strong> to start playing. 
+			The game is played by two players (You and a Computer). If you clicked 
+			on any of  the boxes
+			the value <strong>X</strong> will be placed at the position, almost immediately the computer will respond by placing <strong>O</strong> on any of the empty boxes. You can hit the <strong>restart button</strong> to play another game after a game has ended.
+			<p>
+			Designed by <b> Alienyi David</b> assisted by <b>Abdulrasaq Nusuru</b>
+			<p>AI Solver by <b> Alienyi David</b>
+		</p>
+		</article>
+		</div>
+		
+	</center>
+	<script src="js/script.js"></script>
+</body>
+</html>
